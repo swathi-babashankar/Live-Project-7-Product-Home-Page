@@ -1,0 +1,322 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #fff
+  }
+  /* -----NAVBAR------ */
+
+  body nav img{
+    margin-top: 55px;
+    margin-left: 45px;
+  }
+
+  .nav-items{
+   display: flex;
+   margin-top: -40px;
+   margin-left: 85px;
+   align-items: center;
+   justify-content: center;
+   gap: 105px;
+   font-size: 21px;
+   font-weight: 10px;
+   font-family: "poppins";
+   cursor: pointer;
+   color: rgba(87, 87, 87, 0.948);
+  }
+
+  div .active-item:hover{
+    color: rgb(191, 75, 33);
+    font-family: "fredoka one";
+  }
+
+  nav img[src="/images/actions.svg" ]{
+    mix-blend-mode: multiply;
+    width: 230px;
+    float: right;
+    margin-top: -30px;
+  }
+
+  .intro-section{
+    display: flex;
+
+  }
+
+  .left-section{
+    margin-top: 80px;
+    margin-left: 45px;
+  }
+
+  div h3{
+    font-size: 50px;
+    font-family: "poppins";
+    font-weight: 90px;
+  }
+
+  h3 img[src="/images/circles.svg" ]{
+    width: 50px;
+  }
+
+ div .left-section h1{
+    font-family: "fredoka one";
+    font-size: 72px;
+    width: 850px;
+    font-weight: 400px;
+    margin-top: 40px;
+
+  }
+  .sub-headlines{
+    margin-top: 40px;
+    font-size: 22px;
+    font-family: "poppins";
+  }
+
+  h5 img[src="/images/plus.svg"]{
+    background-color: #ff4500;
+    border-radius: 1em;
+  }
+
+  .sub-headline{
+    margin-top: 10px;
+  }
+  .text{
+    margin-top: 40px;
+    width: 680px;
+    font-family: "poppins";
+    color: rgba(172, 168, 168, 0.948);
+  }
+
+  .action-btns{
+    margin-top: 40px;
+    
+  }
+
+  .action-btn{
+    border: none;
+    border-radius: 1.7em;
+    padding: 1.2em 2.2em;
+    background-color: #ff4500;
+    color: #fff;
+    margin-right: 20px;
+    font-family: "poppins";
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .right-section{
+    margin-top: 40px;
+   }
+  
+   /* -------HEADPHONE IMAGE SECTION------ */
+  
+  img[src="/images/discount.svg"]{     
+    filter:drop-shadow(30px 15px 4px #fff);
+    position: relative;
+    top: 240px;
+    right: 390px;
+    margin-left: 280px;
+    
+    
+  }
+  .discount-content{
+    position: relative;
+    top: 125px;
+    right: 70px;
+    color:#ffff;
+    font-family: "fredoka one";
+    letter-spacing: 0.5px;
+
+  }
+  div.discount-content h1{
+    font-size: 45px;
+    font-weight: 40px;
+  }
+
+  img[src="/images/headphones.jpg"]{
+     mix-blend-mode: multiply;      
+    position: absolute;
+    top: 105px;  
+    right: 130px;
+    width: 500px;
+    height: 500px;
+  }
+  
+  .dots
+  {
+    height: 50px;
+    width: 50px;
+   
+  }
+
+  .yellow-dot{
+    height: 23px;
+    width: 23px;
+    background-color: #d3c41c;
+    border: none;
+    border-radius: 1em;
+    margin-top: 220px;
+    margin-left: 180px;
+  }
+
+  .tomato-dot{
+    height: 23px;
+    width: 23px;
+    background-color: #d31c1c;
+    border: none;
+    border-radius: 1em;
+    margin-left: 230px;
+    margin-top: -24px;
+  }
+
+  .black-dot{
+    height: 23px;
+    width: 23px;
+    background-color: #1c0303;
+    border: none;
+    border-radius: 1em;
+    margin-left: 280px;
+    margin-top: -24px;
+  }
+
+  .right-section .action-btn{
+    margin-left: 180px;
+    cursor: pointer;
+  }
+
+  /*----- Making mobile responsive----- */
+
+
+  @media (max-width: 950px) { 
+
+    html body{
+       overflow-x: hidden; 
+    }
+
+    
+     body{
+     height: 100vh;
+     width: 430px;
+     
+     
+    }
+    .nav-items{
+      flex-direction: column;
+      gap: 50px;
+      margin-top: 60px;
+
+
+  }
+
+  body nav img{
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left: 195px;
+  }
+
+  nav img[src="/images/actions.svg" ]{
+    
+    margin-top: 20px;
+    margin-left: -90px;
+    
+  }
+  .right-section{
+    width: 380px; 
+    flex-direction: column;
+  }
+  
+  /*------- HEADPHONE IMAGE SECTION-------- */
+  
+  img[src="/images/headphones.jpg"]{ 
+    
+    flex-direction: column;
+    width: 280px;
+    height: 280px;
+    margin-top: 390px;
+    margin-left: 80px;
+    margin-right: 10px;
+  }
+
+  img[src="/images/discount.svg"]{
+  
+    position: relative;
+    top: 70px;
+    margin-right: 90px;
+    margin-left: -520px;
+    width: 80px;
+    margin-top: 100px;
+    
+  }
+
+  .discount-content{
+    position: relative;
+    top: 10px;
+    margin-top: 5px;
+    margin-left: -888px;
+    left: 1px;
+    color: #fff;
+    font-size: 12px;
+  } 
+
+  div.discount-content h1{
+    font-size: 13px;
+  }
+   
+  div.dots{
+    height: 20px;
+    width: 20px;
+    margin-top: -120px;
+    margin-left: -960px;
+
+  }
+
+  .yellow-dot{
+    height: 15px;
+    width: 15px;
+     margin-top: 220px; 
+    
+  }
+
+  .tomato-dot{
+    height: 15px;
+    width: 15px;
+    margin-top: -15px;
+  }
+
+  .black-dot{
+    height: 15px;
+    width: 15px;
+    margin-top: -17px;
+  }
+
+  .right-section .action-btn{
+    margin-left: -780px;
+    font-size: 10px;
+  }
+  
+    .left-section{ 
+    margin-top: 350px;
+    margin-left: 90px; 
+       
+   } 
+ 
+  div h3{
+    margin-top: 140px;
+    font-size: 25px;
+  } 
+
+  div .left-section h1{
+    flex-direction: column;
+    font-size: 30px;
+      
+  }
+
+  .text{
+    width: 250px;
+  }
+
+  }
+
+
